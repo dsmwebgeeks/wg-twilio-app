@@ -1,0 +1,17 @@
+{
+  "name": "reddit-browser",
+  "version": "0.1.0",
+  "description": "A sample Node.js app using Express 4",
+  "main": "web.js",
+  "scripts": {
+    "start": "node web.js"
+  },
+  "dependencies": {
+    "express": "~4.9.x",
+    "restler": "3.x.x",
+    "twilio": "1.7.x"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}
