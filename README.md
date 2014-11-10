@@ -8,6 +8,7 @@ You can also send a text message by [visiting this site](https://lit-headland-12
 
 ## Developing
 
+- Run `npm install` in this directory
 - Make sure you have [Heroku Toolbelt](https://toolbelt.heroku.com/) installed
 - Create your `.env` file with your Twilio credentials per the instructions at the top of `web.js`
 - Run `foreman start`
