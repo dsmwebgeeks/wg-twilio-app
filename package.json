@@ -1,5 +1,5 @@
 {
-  "name": "reddit-browser",
+  "name": "wg-twilio-app",
   "version": "0.1.0",
   "description": "A sample Node.js app using Express 4",
   "main": "web.js",
@@ -7,6 +7,7 @@
     "start": "node web.js"
   },
   "dependencies": {
+    "body-parser": "^1.9.2",
     "express": "~4.9.x",
     "restler": "3.x.x",
     "twilio": "1.7.x"
