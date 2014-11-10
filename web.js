@@ -1,20 +1,11 @@
 // TWILIO AUTH
-// Create a module here '/ignore_secrets/twilio_auth.js' (this directory will be ignored by git)
-// Add this script to that file:
-// var twilio_auth = {
-// 	TWILIO_ACCOUNT_SID: "YOUR_TWILIO_ACCOUNT_SID",
-// 	TWILIO_AUTH_TOKEN: "YOUR_TWILIO_AUTH_TOKEN"
-// };
-// module.exports.twilio_account_sid = function () {
-//   return twilio_auth.TWILIO_ACCOUNT_SID
-// };
-// module.exports.twilio_auth_token = function () {
-//   return twilio_auth.TWILIO_AUTH_TOKEN
-// };
+// Create a file called `.env`
+// Add the following lines to that file:
+// TWILIO_ACCOUNT_SID=YOUR_TWILIO_ACCOUNT_SID
+// TWILIO_AUTH_TOKEN=YOUR_TWILIO_AUTH_TOKEN
 //
 // Replace with your Twilio account SID and auth token
-// Note: This module is not used in this project yet...
-var client = require('twilio')( (require('./ignore_secrets/twilio_auth.js').twilio_account_sid()) , (require('./ignore_secrets/twilio_auth.js').twilio_auth_token()) );
+var client = require('twilio')( process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN );
 
 var express = require('express');
 var app = express();
